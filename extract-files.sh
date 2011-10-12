@@ -154,12 +154,11 @@ COMMON_LIBS="
 	libtvoutservice.so
 	libtvout.so
 	"
-if [ $FIRMWARE != "UHKG7" ] && [ $FIRMWARE != "GWK74" ]
+if [ $FIRMWARE != "UHKG7" ]
 then
     COMMON_LIBS="$COMMON_LIBS
 	libsecjpegarcsoft.so
 	libsecjpegboard.so
-	libsecjpegencoder.so
 	libsecjpeginterface.so
 	"
 fi
